@@ -1,7 +1,8 @@
 function convertToBinary(num){
+    //return num.toString(2)
     if(num>0){
         let binary = Math.floor(num%2);
-        return (convertToBinary(Math.floor(num/2))+ binary,' ' );
+        return (convertToBinary(Math.floor(num/2))+ binary);
     }else{
         return ''; 
     }

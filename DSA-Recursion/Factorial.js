@@ -1,9 +1,9 @@
 function Factorial(num){
-    let result = num
-    for(i=num-1;i>0;i--){
-        result = result * i
+    if(num===1){
+        return num
     }
-    return result
+    return num * Factorial(num-1)
+    
 }
 
 console.log(Factorial(5))

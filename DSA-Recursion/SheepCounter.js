@@ -1,9 +1,10 @@
 function SheepCounter(sheep){
-    while(0<sheep){
+    if(sheep===0){
+        console.log('All Sheep jumped over the fence')
+    }else{
         console.log(`${sheep}: Another sheep jumps over the fence`)
-        sheep--
-    }    
-    console.log('All sheep jumped over the fence')
+        SheepCounter(sheep-1)
+    }
 }
 
 SheepCounter(4)

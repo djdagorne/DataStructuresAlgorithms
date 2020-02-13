@@ -1,0 +1,38 @@
+1a O(1) or constant, because you do one 'operation'
+1b o(n) or linear, because you ask each person once, n=people in the room.
+
+2. O(1) or constant, because there is one operation regardless of input
+
+3. O(n^k) Polynomial, because you are performing arr2.length operations
+    arr1.length amount of times.
+
+4.  O(n) or Linear because you're doing array.length amount of operations.
+
+5. O(n) or linear on average due to the same reasoning as above. You could get lucky and find the item early in the array though.
+
+6. O(n^k) or polynomial because you have to go through all of arr2, arr1.length amount of times
+
+7. This algorithm generates a fibonnaci sequence as an array with as many
+    items as supplied to compute() . Its runtime is O(n) linear because it only performs one operation per cycle
+
+8. This algorithm is an O(logn) or logarithmic if the array is ordered.
+    this is largely because it divides the array into half immediately and 
+    begins searching very effeciently. At best it finds the item immediately, but at worst it would 
+    be logarithmic
+
+9. this is an O(1) constant, because its only ever going to perform one operation.
+
+10. this finds prime numbers. i believe it would be linear because its going to check
+    as many operations as the number supplied.
+
+11 I think it would be exponential because you're number of operations scales based on the number of disks,
+    multipled by the constant amount of towers you have to work with.
+
+12a. linear because you do one operation per sheep counted
+12b. constant because it performs one math operation every times
+12c. Linear because it performs the rearranging operation as many times as you have letters to work with
+12d. linear, does an operation per letters
+13d. linear, one operation per side length
+13e. linear, one operation for every letter in the date supplied, or constant if you just use split
+13f. exponential, runs the operation at least two times the number supplied
+13g. linear, runs the operation once times the number supplied.

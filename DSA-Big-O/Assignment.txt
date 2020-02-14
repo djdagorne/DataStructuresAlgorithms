@@ -28,10 +28,10 @@
 11 I think it would be exponential because you're number of operations scales based on the number of disks,
     multipled by the constant amount of towers you have to work with.
 
-12a. linear because you do one operation per sheep counted
-12b. constant because it performs one math operation every times
-12c. Linear because it performs the rearranging operation as many times as you have letters to work with
-12d. linear, does an operation per letters
+13a. linear because you do one operation per sheep counted
+13b. constant because it performs one math operation every times
+13c. Linear because it performs the rearranging operation as many times as you have letters to work with
+13d. linear, does an operation per letters
 13d. linear, one operation per side length
 13e. linear, one operation for every letter in the date supplied, or constant if you just use split
 13f. exponential, runs the operation at least two times the number supplied

@@ -1,9 +1,9 @@
-import memory from './memory'
+const Memory = require('./memory')
 
 class Array{
     constructor(){
         this.length = 0;
-        this.ptr = memory.allocate(this.length)
+        this.ptr = Memory.allocate(this.length);
     }
 
     push(value){
@@ -12,7 +12,7 @@ class Array{
         }
         //resizes the array, requesting a proper sized memory allocation to be provided for the resized array
         
-        memory.set(this.ptr + this.length, value);
+        Memory.set(this.ptr + this.length, value);
         this.length++;
     }
 
@@ -37,6 +37,8 @@ class Array{
     }
 
     pop(){
+
+
         if(this.length ===0){
             throw new Error('Index error');
         }
@@ -62,7 +64,6 @@ class Array{
     remove(index){
         //we check to see if index is valid
         //we copy data that occurs after index using O(n) get methods
-        //we set it to this.ptr-index,value
         //length--
         if(index < 0 || index >= this.length){
             throw new Error('Index error');
@@ -74,3 +75,4 @@ class Array{
 }
 Array.SIZE_RATIO = 3;
 
+module.exports = Array;
